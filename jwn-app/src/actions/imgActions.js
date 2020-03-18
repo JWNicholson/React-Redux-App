@@ -12,7 +12,7 @@ export const getImages = () => dispatch => {
                 console.log(res);
                 dispatch({
                     type: FETCH_SUCCESS, 
-                    payload: res.data
+                    payload: res.data.message
                 });
             })
              .catch(err => {
