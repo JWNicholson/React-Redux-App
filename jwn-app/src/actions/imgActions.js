@@ -7,7 +7,7 @@ export const FETCH_FAIL = "FETCH_FAIL";
 export const getImages = () => dispatch => {
     dispatch({type: FETCH_IMG});
     axios
-        .get("https://dog.ceo/api/breeds/image/random/9")
+        .get("https://dog.ceo/api/breeds/image/random/50")
             .then(res => {
                 console.log(res);
                 dispatch({
